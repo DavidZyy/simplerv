@@ -10,7 +10,7 @@ module single_cycle_cpu_board_tb();
   end
   /*iverilog */
   initial begin
-    $dumpfile("single_cycle_cpu_board_wave.vcd");        //生成的vcd文件名称
+    $dumpfile("single_cycle_cpu_board_tb.vcd");        //生成的vcd文件名称
     $dumpvars(0, single_cycle_cpu_board_tb);    //tb模块名称
   end
   wire [3:0] VGA_R, VGA_G, VGA_B;

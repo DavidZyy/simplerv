@@ -1,6 +1,4 @@
-
 # TEST = single_cycle_cpu_tb
-
 TEST = single_cycle_cpu_board_tb
 
 TB_DIR = testbench
