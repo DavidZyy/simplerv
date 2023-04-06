@@ -1,4 +1,4 @@
-
+// 8kb
 module ram (input clk,
             input rst,
             input load,
@@ -24,9 +24,9 @@ module ram (input clk,
   assign actual_address10[addr_width-1:0] = {addr[addr_width-1:2], 2'b10};
   assign actual_address11[addr_width-1:0] = {addr[addr_width-1:2], 2'b11};
   reg [31:0] mem[mem_size - 1:0];
-  initial begin
-    $readmemh("/home/mgt/project/tetris-sdl-c/build/ram.mem", mem);
-  end
+  // initial begin
+  //   $readmemh("/home/mgt/project/tetris-sdl-c/build/ram.mem", mem);
+  // end
   wire [31:0] load_tmp;
   wire [31:0] data_shifted;
   wire [3:0] byte_we_pattern;

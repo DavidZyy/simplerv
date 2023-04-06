@@ -20,7 +20,7 @@
 - 编译： `iverilog ./single_cycle_cpu_tb.v -y . -o single_cycle_cpu_tb`
 - 仿真： `vvp -n single_cycle_cpu_tb -vcd`
 
-查看波形时，![](2022-03-13-02-45-21.png) a0 的值即为的 LED 的值
+查看波形时，![](assets/2022-03-13-02-45-21.png) a0 的值即为的 LED 的值
 
 ### 编译 C 程序
 

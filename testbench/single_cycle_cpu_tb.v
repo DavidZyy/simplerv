@@ -1,7 +1,8 @@
 `timescale 1ns/100ps
 
 module single_cycle_cpu_tb();
-  localparam period = 5;
+  // localparam period = 5;
+  localparam period = 3;
   reg clk;
   initial begin
     clk            = 0;
@@ -9,7 +10,7 @@ module single_cycle_cpu_tb();
   end
   /*iverilog */
   initial begin
-    $dumpfile("single_cycle_cpu_wave.vcd");        //生成的vcd文件名称
+    $dumpfile("single_cycle_cpu_tb.vcd");        //生成的vcd文件名称
     $dumpvars(0, single_cycle_cpu_tb);    //tb模块名称
   end
   reg rst, halt;
@@ -24,7 +25,7 @@ module single_cycle_cpu_tb();
     halt = 0;
     #period;
     rst = 0;
-    #999990;
+    #9990;
     halt = 1;
     #period;
     $stop;

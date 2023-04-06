@@ -6,6 +6,7 @@ module single_cycle_cpu_board(input clk,
                               input PS2_CLK,
                               input PS2_DATA,
                               input UART_TXD_IN,
+
                               output UART_RXD_OUT,
                               output [3:0]VGA_R,
                               output [3:0]VGA_G,

@@ -116,6 +116,8 @@ module single_cycle_cpu (input clk,
   assign mem_address = load ? load_address : store_address;
   wire [31:0] ram_data_in, ram_data_out;
   assign ram_data_in[31:0] = rs2_data[31:0];
+
+  /* acted like ram or rom? */
   mmio mmio0(.clk(clk),
   .vga_clk(vga_clk),
   .rst(rst),
